@@ -1,0 +1,649 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:500i&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+
+html{
+	height: 100%;
+}
+
+body{
+	min-height: 100%;
+	background-image: url(../img/fondo1.png);
+
+}
+
+.cabeceralogo{
+	grid-area: cabeceralogo;
+}
+
+
+.texto{
+	grid-area: texto;
+	
+}
+
+
+.imagen{
+	grid-area: imagen;
+	
+}
+
+.formulario{
+	grid-area: formulario;
+
+}
+
+.footer{
+	grid-area: footer;
+}
+
+
+
+
+
+ /*Smartphones*/
+@media (min-width: 0px) and (max-width:500px) {
+.gridcontainer{
+display: grid;
+background-color: #C4E538;
+grid-template-areas: 
+"cabeceralogo" 
+"texto" 
+"imagen" 
+"formulario" 
+"footer" 
+
+}
+
+.cabeceralogo{
+	width: 100%;
+	margin:0;
+	background-color: #C4E538;
+
+}
+
+#logo2{
+	margin-top: 7px;
+	
+}
+
+
+.texto{
+	width: 100%;
+	margin: 0;
+	height: 200px;
+	background-color: #B53471;
+}
+
+
+
+h2{
+	text-align: left;
+	margin-left: 15px;
+	font-family: 'Oswald';
+	font-size: 50px;
+	color:#12CBC4;
+}
+
+h2:hover{
+	color: #FFC312;
+}
+
+
+.imagen{
+	width: 100%;
+	background-color: #B53471;
+	margin:0;
+}
+
+p{
+	text-align: left;
+	font-family: 'Raleway';
+	font-size: 20px;
+	color: #ffffff;
+	line-height: 1.5;
+	margin-left: 15px;
+}
+
+
+
+#corona{
+	margin-left: 20px;
+	
+}
+
+#corona2{
+	display: none:;
+}
+
+
+
+
+.formulario{
+	width: 100%;
+	margin: 0;
+	background-color: #B53471;
+}
+
+form{
+	width: 100%;
+	margin-top: 15px;
+	background-color: #12CBC4;
+
+}
+
+form p{
+	padding-top: 30px;
+	margin-bottom: 20px;
+	text-align: center;
+	font-family: 'Raleway';
+	font-weight: 600;
+	font-size: 20px;
+	color: #6F1E51;
+
+}
+
+.enviar{
+	margin-top: 20px;
+	margin-bottom: 30px;
+	margin-left: 165px;
+	width: 200px;
+	height: 60px;
+	background-color: #6F1E51;
+	color: pink;
+	font-size: 25px;
+	border-radius: 7px;
+	font-family: 'Raleway';
+	font-weight: 600;
+	transition: all 0.3s ease;
+
+}
+
+.enviar:hover{
+	background-color: #EE5A24;
+	color:#ffffff;
+	font-size: 37px;
+	box-shadow: inset 0 0 0 25px · #EE5A24;
+	border-radius: 50%;
+}
+
+
+label{
+	padding-left: 43px;
+	font-size: 15px;
+	font-family: 'Raleway';
+	font-weight: 500;
+	color: #1B1464;
+}
+
+.cajatexto{
+	width: 80%;
+	margin-left: 43px;
+	height: 30px;
+}
+
+
+.footer{
+	width: 100%;
+	margin: 0;
+	background-color:#C4E538;
+	height: 90px;
+}
+
+footer p{
+	margin-top: 10px;
+	font-family: 'Raleway';
+	font-size: 16px;
+	font-weight:400;
+	color: #6F1E51
+}
+
+
+#facebook{
+	
+	width: 2%;
+	height: 25px;
+	padding-right: 35%;
+	margin-top: 15px;
+	float: right;
+}
+
+#instagram{
+	width: 2%;
+	height: 25px;
+	padding-left: 37%;
+	margin-top: 15px;
+	float: left;
+}
+
+#microsmart{
+	width: 2%;
+	height: 25px;
+	margin-right: 12%;
+	margin-top: 15px;
+	float: right;
+	
+		
+}
+
+
+
+}
+
+
+
+
+
+
+/*tablet-----------------------------------------------*/
+@media (min-width: 501px) and (max-width: 1000px)
+{.gridcontainer {
+	background-color:#C4E538;
+	display: grid;
+	grid-template-columns: ;
+	grid-template-rows: repeat(2, auto);
+	grid-template-areas: "cabeceralogo	cabeceralogo"
+						  "texto	formulario"
+						  "footer	footer";}
+
+.cabeceralogo{
+	width: 100%;
+	height: 140px;
+	margin:0;
+	background-color: #C4E538;
+}
+
+
+#logo2{
+	margin-top: 27px;
+	
+
+
+}
+
+.texto{
+	background-color: #B53471;
+	width: 100%;
+	width: 620px;
+	margin: 0;
+}
+
+#corona{
+	display: none;
+}
+
+
+
+
+
+h2{
+	margin-top: 15px;
+	text-align: center;
+	font-family: 'Oswald';
+	font-size:65px;
+	color: #9980FA;
+	transition: all 0.3s ease;
+}
+
+h2:hover{
+	box-shadow: inset 0 0 0 25px · #ffffff;
+	color: #ffffff;
+}
+
+p{
+	text-align:  center;
+	
+	font-family: 'Raleway';
+	font-weight: 500;
+	font-size: 18px;
+	color:#FFC312 ;
+	line-height: 1.5;
+	
+}
+
+p:hover{
+	color: #00d2d3;
+}
+#corona2{
+	margin-left: 165px;
+	margin-top: 5px;
+}
+
+.formulario{
+	margin-bottom: 5px;
+	width: 100%;
+	margin:0;
+	margin-right: 12px;
+	background-color: #B53471;
+	padding-top: 18px;
+}
+
+form{
+	margin-left: 15px;
+	padding-bottom: 10px;
+	margin-top: 10px;
+	width: 350px;
+	height: 450px;
+	border-radius: 20px;
+	background-color: #ff9ff3;
+}
+
+form p{
+	padding-top: 14px;
+    margin-left: 10px;
+ 	font-family: Raleway;
+    font-weight: 600;
+    font-size: 20px;
+    color: #5f27cd;
+    line-height: 1.5;
+    margin-bottom: 30px;
+    
+}
+
+form p:hover{
+	color:#ffffff;
+}
+
+ .enviar {
+  	margin-top: 50px;
+  	margin-left: 100px;
+    width: 160px;
+    height: 70px;
+    background-color: #EE5A24;
+    color:  #6F1E51;
+    font-size: 23px;
+    border-radius: 7px;
+    font-family: Raleway;
+    font-weight: 600 ;
+    letter-spacing: 150;
+    transition: all 0.3s ease;
+    
+}
+
+.enviar:hover{
+	background-color: #9980FA;
+	color:#ffffff;
+	box-shadow: inset 0 0 0 25px · #EE5A24;
+	border-radius: 50%;
+	font-size: 30px;
+
+}
+
+label {
+	padding-left: 28px;
+    font-size: 20px;
+    font-family: Raleway;
+    font-weight: 500;
+    color:#B53471;
+}
+
+.cajatexto{
+	width: 80%;
+	margin-left: 28px;
+	height: 22px;
+
+}
+
+.footer{
+	padding-bottom: 10px;
+	width: 100%;
+	margin:0;
+	background-color: #C4E538;
+	height: 80px;
+}
+
+footer p {
+	margin-left: 10px;
+	font-family: 'Raleway'
+	font-size: 10px;
+	color: #6F1E51;
+	padding-top: 15px;
+	float: left;
+}
+
+footer p:hover{
+	color: #2e86de;
+}
+
+
+
+#microsmart {
+	margin-right: 28px; 
+	margin-top: 20px;
+	float: right;
+	
+}
+
+
+
+#facebook{
+	margin-right: 27px;
+	margin-top:  20px;
+	float: right;
+
+}
+
+#instagram{
+	margin-right: 30px;
+	margin-top: 20px;
+	float: right;
+}	
+
+
+
+}
+
+
+/*COMPUTADORA-----------------------------------------------*/
+
+@media (min-width: 1001px) and (max-width: 1920px) {
+
+	.gridcontainer {
+    background-color: #EE5A24; 
+    display: grid; 
+	grid-template-columns: ;
+	grid-template-rows: repeat(3, auto);
+	grid-template-areas: "cabeceralogo	cabeceralogo 	cabeceralogo " 	
+						 "texto     	texto    		formulario" 
+						 "imagen    	imagen   		formulario"
+						 "footer    	footer   		footer"; }
+
+
+.cabeceralogo{
+	height: 140px;
+	width: 100%;
+	background-color: #C4E538;
+	margin: 0;
+}
+
+ #logo2 {
+  	margin-top: 27px;
+	
+
+ }
+
+
+
+.texto {
+	margin-top: 0px;
+	width: 100%;
+	height: 230px;
+	
+	
+}
+
+p {
+   	margin-left: 30px;
+    font-family: Raleway;
+    font-weight: 600;
+    font-size: 20px;
+    color: #0a3d62;
+    line-height: 1.5;
+   
+}
+
+p:hover{
+	color: #ffffff;
+}
+
+
+h2 {
+     margin-top: 0px;
+     margin-left:30px;
+	font-family: Oswald;
+    font-size: 70px;
+    color: #ffffff;
+}
+
+h2:hover {
+	color: #12CBC4;
+}
+
+
+.imagen {
+	width: 100%;
+	height: 400px;
+	margin: 0;
+
+}
+
+.formulario {
+	width: 100%;
+	margin: 0;
+
+}
+
+form {
+	padding-bottom: 10px;
+    margin-top: 25px;
+    margin-left: 20px;
+    width:400px;
+    height: 500px;
+   	border-radius: 20px;
+   	background-color:#ff9ff3 ;
+}
+
+form p {
+	text-align: center;
+    padding-top: 14px;
+    padding-bottom: 25px;
+    margin-left: 5px;
+ 	font-family: Raleway;
+    font-weight: 600;
+    font-size: 30px;
+    color: black;
+    line-height: 1.5;
+    color: #6F1E51;
+}
+
+  .enviar {
+  	margin-top: 14px;
+  	margin-left: 105px;
+    width: 180px;
+    height: 80px;
+    background-color: #5758BB;
+    color: #ffffff;
+    font-size: 25px;
+    border-radius: 7px;
+    font-family: Raleway;
+    font-weight: 600 ;
+    letter-spacing: 150;
+    transition: all 0.8s ease;
+    
+}
+
+.enviar:hover{
+
+	background-color: #b8e994;
+	font-size: 35px;
+	color:#b71540;
+	box-shadow: inset 0 0 0 25px · #EE5A24;
+	border-radius: 50%;
+}
+
+
+
+label {
+	padding-left: 28px;
+    font-size: 20px;
+    font-family: Raleway;
+    font-weight: 500;
+    color:#B53471;}
+
+
+.cajatexto {
+width: 80%;
+margin-left: 28px;
+height: 22px;}
+
+
+footer {
+margin-top: 15px;
+width: 100%;
+height:76px;
+margin: 0;
+background-color: #C4E538;
+}
+
+.footer p {
+	margin-top: 5px;
+	margin-left: 420px;
+    font-family: Raleway;
+	font-size: 18px;
+	font-weight: 400; 
+
+}
+
+
+#corona {
+	margin-top:5px;
+	margin-left: 360px;;
+	
+}
+
+
+#corona2 {
+	margin-top:25px;
+	margin-left:450px;
+	display: none;;		
+}
+
+#instagram {
+	margin-top: 5px;
+	padding-right: 650px;
+	float: right;
+
+}
+
+#facebook {
+	margin-top: 5px;
+	margin-right:  10px;
+	float: right;
+}
+
+#microsmart {
+	
+	margin-right: 10px; 
+	margin-top: 5px;
+	float: right;
+	
+	
+}
+
+
+
+}
+
+
+
+
+
+
+
+
+
